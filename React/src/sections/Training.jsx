@@ -285,19 +285,18 @@ function Training() {
                   display: "flex", 
                   alignItems: "center", 
                   justifyContent: "center",
-                  overflow: "visible",
-                  minHeight: "200px",
-                  maxHeight: "300px",
+                  overflow: "hidden",
+                  height: "200px",
                   background: "#F9FAFB",
                   padding: "8px",
+                  flexShrink: 0,
                 }}>
                   <img
                     src={service.image}
                     alt={service.title}
                     style={{
                       width: "100%",
-                      height: "auto",
-                      maxHeight: "280px",
+                      height: "100%",
                       objectFit: "contain",
                       borderRadius: "8px",
                       display: "block",
@@ -306,7 +305,7 @@ function Training() {
                 </div>
               ) : (
                 /* Icon Section - Only for services without image */
-                <div style={{ marginBottom: "24px" }}>
+                <div style={{ marginBottom: "24px", height: "200px", display: "flex", alignItems: "center" }}>
                   <div
                     style={{
                       width: "80px",
@@ -327,7 +326,7 @@ function Training() {
               )}
 
               {/* Content Section */}
-              <div style={{ flex: 1 }}>
+              <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
                 <h2
                   style={{
                     fontSize: "clamp(22px, 2.5vw, 26px)",
@@ -336,6 +335,7 @@ function Training() {
                     marginBottom: "12px",
                     lineHeight: "1.3",
                     letterSpacing: "-0.01em",
+                    minHeight: "65px",
                   }}
                 >
                   {service.title}
@@ -348,7 +348,7 @@ function Training() {
                     color: "#4B5563",
                     lineHeight: "1.6",
                     marginBottom: "24px",
-                    flexGrow: 1,
+                    flex: 1,
                   }}
                 >
                   {service.description}
@@ -666,7 +666,7 @@ function Training() {
                   transition: "all 0.3s ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "#006494";
+                  e.currentTarget.style.borderColor = "#FF6B35";
                   e.currentTarget.style.background = "#FFF5F2";
                   e.currentTarget.style.transform = "translateY(-4px)";
                 }}

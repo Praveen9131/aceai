@@ -32,7 +32,7 @@ function CampusConnectPreview() {
       />
 
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
-        <div style={{ textAlign: "left", marginBottom: "64px", maxWidth: "1100px", marginLeft: 0 }}>
+        <div style={{ textAlign: "center", marginBottom: "64px", maxWidth: "1100px", margin: "0 auto 64px" }}>
           <span 
             className={`training-badge ${isVisible ? "fade-in-up" : ""}`} 
             style={{ 
@@ -59,10 +59,11 @@ function CampusConnectPreview() {
               fontWeight: 800,
               color: "#111827",
               marginBottom: "16px",
-              lineHeight: 1.1,
-              letterSpacing: "-0.02em",
-              maxWidth: "960px"
-            }}
+lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+                maxWidth: "960px",
+                margin: "0 auto 16px"
+              }}
           >
             The future of learning powered by{" "}
             <span style={{ 
@@ -79,10 +80,10 @@ function CampusConnectPreview() {
             className={`section-subtitle ${isVisible ? "fade-in-up" : ""}`}
             style={{ 
               fontSize: "clamp(18px, 2.2vw, 22px)",
-              color: "#4B5563",
-              maxWidth: "780px",
-              margin: "8px 0 28px 0",
-              lineHeight: 1.7
+color: "#4B5563",
+                maxWidth: "780px",
+                margin: "8px auto 28px",
+                lineHeight: 1.7
             }}
           >
             Empower your students and faculty with AI‑first curricula, hands‑on projects, and industry mentorship. Connect with Campus Connect to build outcomes‑driven education for tomorrow’s jobs.
