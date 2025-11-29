@@ -3,30 +3,31 @@ import { FaLinkedin, FaYoutube, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone
 function Footer() {
 
   return (
-    <footer className="footer" style={{ background: "#1E293B", color: "#ffffff", padding: "60px var(--container-padding-desktop) 0" }}>
+    <footer className="footer" style={{ background: "#1E293B", color: "#ffffff", padding: "clamp(40px, 6vw, 60px) clamp(16px, 5vw, 64px) 0" }}>
       <div className="container">
         {/* Top Section: Logo */}
         <div style={{ 
-          marginBottom: "48px",
-          paddingBottom: "32px",
+          marginBottom: "clamp(32px, 5vw, 48px)",
+          paddingBottom: "clamp(20px, 3vw, 32px)",
           borderBottom: "1px solid rgba(255, 255, 255, 0.1)"
         }}>
           {/* Logo */}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
             <img 
               src="/homeImgs/newlogoi.jpg" 
               alt="Aceai Technologies" 
-              style={{ height: "50px", width: "auto" }}
+              style={{ height: "clamp(40px, 6vw, 50px)", width: "auto" }}
             />
-            <span style={{ fontSize: "20px", fontWeight: 600, color: "#ffffff" }}>Aceai Technologies</span>
+            <span style={{ fontSize: "clamp(16px, 2.5vw, 20px)", fontWeight: 600, color: "#ffffff" }}>Aceai Technologies</span>
           </div>
         </div>
 
         {/* Main Content: Three Columns */}
         <div className="footer-content" style={{ 
           display: "grid", 
-          gap: "48px",
-          marginBottom: "48px"
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))",
+          gap: "clamp(24px, 4vw, 48px)",
+          marginBottom: "clamp(32px, 5vw, 48px)"
         }}>
           {/* Left Column: Navigation Links */}
           <div className="footer-column">

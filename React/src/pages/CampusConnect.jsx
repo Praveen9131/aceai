@@ -362,10 +362,11 @@ function CampusConnect() {
 
           {/* Why Partner Section - Improved Layout */}
           <div
+            className="why-partner-grid"
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(500px, 1fr))",
-              gap: spacing.section,
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 400px), 1fr))",
+              gap: "clamp(40px, 8vw, 120px)",
               marginBottom: spacing.section,
               alignItems: "start",
             }}
@@ -533,10 +534,10 @@ function CampusConnect() {
               </div>
               
               <div
-                className={isVisible ? "fade-in-up" : ""}
+                className={`feature-cards-grid ${isVisible ? "fade-in-up" : ""}`}
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "repeat(2, 1fr)",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 150px), 1fr))",
                   gap: spacing.md,
                 }}
               >
@@ -886,9 +887,10 @@ function CampusConnect() {
               </p>
             </div>
             <div
+              className="services-offerings-grid"
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(380px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 340px), 1fr))",
                 gap: spacing.lg,
                 maxWidth: "1400px",
                 margin: "0 auto",
@@ -1430,9 +1432,9 @@ function CampusConnect() {
               </p>
             </div>
 
-            <div style={{ 
+            <div className="course-catalog-grid" style={{ 
               display: "grid", 
-              gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", 
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))", 
               gap: spacing.lg,
               maxWidth: "1400px",
               margin: "0 auto",
@@ -1570,9 +1572,10 @@ function CampusConnect() {
             </div>
 
             <div
+              className="aceai-labs-grid"
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
                 gap: spacing.lg,
                 maxWidth: "1400px",
                 margin: "0 auto",

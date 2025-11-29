@@ -104,7 +104,7 @@ function Training() {
   ];
 
   return (
-    <section id="training" ref={ref} className="section training-section" style={{ background: "#ffffff", padding: "100px var(--container-padding-desktop) 80px" }}>
+    <section id="training" ref={ref} className="section training-section" style={{ background: "#ffffff", padding: "clamp(60px, 10vw, 100px) clamp(16px, 5vw, 64px)" }}>
       <div className="container">
         {/* Header Section */}
         <div style={{ textAlign: "center", marginBottom: "48px", maxWidth: "900px", margin: "0 auto 48px" }}>
@@ -232,12 +232,12 @@ function Training() {
         </div>
 
         {/* Services Grid - 3 columns */}
-        <div style={{ 
+        <div className="training-services-grid" style={{ 
           maxWidth: "1400px", 
           margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: "32px",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
+          gap: "clamp(20px, 3vw, 32px)",
           alignItems: "stretch",
         }}>
           {services.map((service, index) => {
@@ -414,7 +414,7 @@ function Training() {
             
             <h2 
               style={{ 
-                fontSize: "48px",
+                fontSize: "clamp(32px, 5vw, 48px)",
                 fontWeight: 700,
                 color: "#111827",
                 marginTop: "0",
@@ -442,25 +442,25 @@ function Training() {
             {/* What We Deliver Section */}
             <div style={{ 
               maxWidth: "1000px", 
-              margin: "0 auto 64px",
+              margin: "0 auto clamp(40px, 6vw, 64px)",
               background: "#FFF5F2",
               border: "1px solid rgba(255, 108, 12, 0.2)",
               borderRadius: "16px",
-              padding: "40px 48px"
+              padding: "clamp(24px, 4vw, 40px) clamp(20px, 4vw, 48px)"
             }}>
               <h3 style={{ 
-                fontSize: "24px", 
+                fontSize: "clamp(20px, 3vw, 24px)", 
                 fontWeight: 700, 
                 color: "#111827", 
-                marginBottom: "24px",
+                marginBottom: "clamp(16px, 3vw, 24px)",
                 textAlign: "center"
               }}>
                 What We Deliver
               </h3>
-              <div style={{ 
+              <div className="deliver-grid" style={{ 
                 display: "grid", 
-                gridTemplateColumns: "repeat(2, 1fr)", 
-                gap: "20px 32px" 
+                gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 250px), 1fr))", 
+                gap: "clamp(12px, 2vw, 20px) clamp(16px, 3vw, 32px)" 
               }}>
                 {[
                   "Scalable & robust solutions",
@@ -510,10 +510,10 @@ function Training() {
               }}
             />
 
-            <div style={{ 
+            <div className="process-flow-grid" style={{ 
               display: "grid", 
-              gridTemplateColumns: "repeat(4, 1fr)", 
-              gap: "32px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 240px), 1fr))", 
+              gap: "clamp(20px, 3vw, 32px)",
               position: "relative",
               zIndex: 1
             }}>
@@ -640,7 +640,7 @@ function Training() {
           </div>
 
           {/* Additional Approach Details */}
-          <div style={{ marginTop: "80px", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "32px" }}>
+          <div className="approach-details-grid" style={{ marginTop: "clamp(48px, 8vw, 80px)", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "clamp(20px, 3vw, 32px)" }}>
             {[
               {
                 title: "Collaborative",

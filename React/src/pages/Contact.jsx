@@ -133,12 +133,12 @@ function Contact() {
       <section style={{ 
         position: "relative", 
         width: "100%", 
-        minHeight: "500px",
+        minHeight: "clamp(300px, 50vw, 500px)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         overflow: "hidden",
-        marginTop: "70px",
+        marginTop: "clamp(64px, 10vw, 70px)",
       }}>
         <div style={{
           position: "absolute",
@@ -164,22 +164,22 @@ function Contact() {
           zIndex: 2,
           textAlign: "center",
           color: "#ffffff",
-          padding: "80px 24px",
+          padding: "clamp(40px, 8vw, 80px) clamp(16px, 4vw, 24px)",
           maxWidth: "1200px",
           margin: "0 auto",
         }}>
           <h1 style={{ 
-            fontSize: "clamp(42px, 6vw, 72px)", 
+            fontSize: "clamp(28px, 7vw, 72px)", 
             fontWeight: 800, 
             color: "#ffffff", 
-            marginBottom: "24px",
+            marginBottom: "clamp(16px, 3vw, 24px)",
             textShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
             lineHeight: 1.2,
           }}>
             Get In Touch
           </h1>
           <p style={{ 
-            fontSize: "clamp(18px, 2.2vw, 24px)", 
+            fontSize: "clamp(14px, 2.5vw, 24px)", 
             color: "#ffffff", 
             maxWidth: "800px", 
             margin: "0 auto",
@@ -192,13 +192,13 @@ function Contact() {
         </div>
       </section>
 
-      <section id="contact" className="section" style={{ background: "#ffffff", padding: "80px var(--container-padding-desktop) 80px" }}>
+      <section id="contact" className="section" style={{ background: "#ffffff", padding: "clamp(40px, 8vw, 80px) clamp(16px, 5vw, 64px)" }}>
         <div className="container">
 
           <div className="contact-form-grid" style={{ 
             display: "grid", 
-            gridTemplateColumns: "1fr 1.2fr", 
-            gap: "48px", 
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 350px), 1fr))", 
+            gap: "clamp(24px, 4vw, 48px)", 
             alignItems: "start",
           }}>
             {/* Left Side - Image */}

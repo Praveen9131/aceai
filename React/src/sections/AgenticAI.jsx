@@ -45,27 +45,27 @@ const useCases = [
 
 function AgenticAI() {
   return (
-    <section id="agentic-ai" className="section" style={{ background: "#ffffff" }}>
+    <section id="agentic-ai" className="section" style={{ background: "#ffffff", padding: "clamp(48px, 8vw, 80px) clamp(16px, 5vw, 64px)" }}>
       <div className="container">
-        <div style={{ textAlign: "center", marginBottom: "64px" }}>
-          <div style={{ fontSize: "64px", color: "var(--color-primary)", marginBottom: "24px" }}>🤖</div>
-          <h2 className="section-title" style={{ color: "var(--color-gray-900)", fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 700 }}>
+        <div style={{ textAlign: "center", marginBottom: "clamp(40px, 6vw, 64px)" }}>
+          <div style={{ fontSize: "clamp(48px, 8vw, 64px)", color: "var(--color-primary)", marginBottom: "clamp(16px, 3vw, 24px)" }}>🤖</div>
+          <h2 className="section-title" style={{ color: "var(--color-gray-900)", fontSize: "clamp(24px, 5vw, 48px)", fontWeight: 700 }}>
             Autonomous AI Agents - The Future of Automation
           </h2>
-          <p className="section-subtitle" style={{ color: "var(--color-gray-600)", fontSize: "clamp(16px, 1.8vw, 18px)" }}>
+          <p className="section-subtitle" style={{ color: "var(--color-gray-600)", fontSize: "clamp(14px, 2vw, 18px)" }}>
             Custom-built AI agents that work 24/7 to automate complex business processes
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "32px" }}>
+        <div className="agentic-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))", gap: "clamp(20px, 3vw, 32px)" }}>
           {useCases.map((useCase, index) => (
             <div
               key={index}
               style={{
                 background: "linear-gradient(135deg, rgba(255, 108, 12, 0.1), rgba(255, 224, 143, 0.08))",
-                padding: "32px",
+                padding: "clamp(20px, 3vw, 32px)",
                 borderRadius: "12px",
-                minHeight: "300px",
+                minHeight: "auto",
                 display: "flex",
                 flexDirection: "column",
                 border: "1px solid rgba(255, 108, 12, 0.2)",

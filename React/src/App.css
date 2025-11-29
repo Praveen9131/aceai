@@ -2125,6 +2125,814 @@ section {
   }
 }
 
+/* ============================================
+   Mobile-First Responsive Enhancements
+   ============================================ */
+
+/* Mobile Navigation Styles */
+@media (max-width: 991px) {
+  .navbar-toggle {
+    display: flex !important;
+  }
+  
+  .navbar-nav {
+    position: fixed !important;
+    top: 70px !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: #1E293B !important;
+    flex-direction: column !important;
+    padding: 24px !important;
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease !important;
+    gap: 16px !important;
+    z-index: 999 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    height: calc(100vh - 70px) !important;
+    overflow-y: auto !important;
+  }
+  
+  .navbar-nav-open {
+    transform: translateX(0) !important;
+  }
+  
+  .navbar-nav a,
+  .navbar-nav button {
+    font-size: 18px !important;
+    padding: 12px 16px !important;
+    width: 100% !important;
+    text-align: left !important;
+    border-radius: 8px !important;
+    transition: background 0.2s ease !important;
+  }
+  
+  .navbar-nav a:hover,
+  .navbar-nav button:hover {
+    background: rgba(255, 108, 12, 0.1) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    height: 64px !important;
+  }
+  
+  .navbar-nav {
+    top: 64px !important;
+    height: calc(100vh - 64px) !important;
+  }
+  
+  .navbar-content {
+    padding: 0 16px !important;
+  }
+  
+  .navbar-logo img {
+    height: 36px !important;
+  }
+  
+  .navbar-logo-text {
+    font-size: 16px !important;
+  }
+}
+
+/* Hero Section Mobile Enhancements */
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 90px 24px 48px !important;
+    min-height: auto !important;
+  }
+  
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  
+  .hero-content {
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  
+  /* Phone container on mobile */
+  .hero-section > div > div > div:last-child {
+    order: -1 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 80px 16px 40px !important;
+  }
+  
+  .hero-headline {
+    font-size: clamp(28px, 7vw, 36px) !important;
+    min-height: auto !important;
+    line-height: 1.2 !important;
+  }
+  
+  .hero-subheadline {
+    font-size: 14px !important;
+  }
+  
+  /* Trust badge mobile */
+  .hero-section [style*="inline-flex"][style*="Trusted"] {
+    font-size: 10px !important;
+    padding: 6px 12px !important;
+  }
+  
+  /* Benefits list mobile */
+  .hero-section [style*="flexWrap: wrap"][style*="gap: 24px"] {
+    gap: 12px !important;
+    justify-content: center !important;
+  }
+  
+  /* Hero buttons mobile */
+  .hero-section a[href="/services"],
+  .hero-section a[href="/campus-connect"] {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 12px 24px !important;
+    font-size: 14px !important;
+  }
+  
+  /* Phone frame responsive */
+  .hero-section [style*="width: min(280px, 36vw)"] {
+    width: min(220px, 60vw) !important;
+  }
+  
+  /* Floating icons mobile */
+  .hero-section [style*="position: fixed"][style*="bottom: 32px"] {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+  
+  .hero-section [style*="position: fixed"] a {
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 22px !important;
+  }
+}
+
+/* Training Section Mobile */
+@media (max-width: 991px) {
+  #training {
+    padding: 60px 24px !important;
+  }
+  
+  /* Services grid - 2 columns on tablet */
+  #training [style*="gridTemplateColumns: repeat(3, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+  
+  /* Process flow - 2 columns on tablet */
+  #training [style*="gridTemplateColumns: repeat(4, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+  
+  /* Hide connecting line on tablet/mobile */
+  #training [style*="position: absolute"][style*="height: 2px"] {
+    display: none !important;
+  }
+  
+  /* Hide arrow connectors */
+  #training [style*="borderLeft: 12px solid"] {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #training {
+    padding: 48px 16px !important;
+  }
+  
+  #training [style*="gridTemplateColumns: repeat(3, 1fr)"],
+  #training [style*="gridTemplateColumns: repeat(4, 1fr)"],
+  #training [style*="gridTemplateColumns: repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  #training h1 {
+    font-size: clamp(28px, 6vw, 36px) !important;
+  }
+  
+  #training h2 {
+    font-size: clamp(20px, 5vw, 26px) !important;
+    min-height: auto !important;
+  }
+  
+  #training img {
+    height: 180px !important;
+    max-height: 180px !important;
+  }
+  
+  /* What We Deliver section */
+  #training [style*="gridTemplateColumns: repeat(2, 1fr)"][style*="gap: 20px 32px"] {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+}
+
+/* Business Enablement Mobile */
+@media (max-width: 991px) {
+  #business-enablement {
+    padding: 60px 24px !important;
+  }
+  
+  #business-enablement [style*="gridTemplateColumns: repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  
+  #business-enablement h2 {
+    font-size: clamp(28px, 5vw, 42px) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #business-enablement {
+    padding: 48px 16px !important;
+  }
+  
+  #business-enablement h2 {
+    font-size: clamp(24px, 6vw, 32px) !important;
+  }
+  
+  #business-enablement [style*="minHeight: 400px"] {
+    min-height: 280px !important;
+  }
+  
+  #business-enablement img {
+    min-height: 280px !important;
+  }
+}
+
+/* Campus Connect Preview Mobile */
+@media (max-width: 991px) {
+  .campus-connect-preview {
+    padding: 60px 24px !important;
+  }
+  
+  .campus-connect-preview [style*="gridTemplateColumns: repeat(auto-fit"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .campus-connect-preview {
+    padding: 48px 16px !important;
+  }
+  
+  .campus-connect-preview h2 {
+    font-size: clamp(28px, 6vw, 40px) !important;
+  }
+  
+  .campus-connect-preview [style*="gridTemplateColumns"],
+  .campus-connect-preview [style*="display: flex"][style*="gap: 60px"] {
+    grid-template-columns: 1fr !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  
+  .campus-connect-preview [style*="minWidth: 180px"] {
+    min-width: auto !important;
+  }
+}
+
+/* Agentic AI Mobile */
+@media (max-width: 991px) {
+  #agentic-ai {
+    padding: 60px 24px !important;
+  }
+  
+  #agentic-ai [style*="gridTemplateColumns: repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #agentic-ai {
+    padding: 48px 16px !important;
+  }
+  
+  #agentic-ai h2 {
+    font-size: clamp(24px, 6vw, 36px) !important;
+  }
+  
+  #agentic-ai [style*="fontSize: 64px"] {
+    font-size: 48px !important;
+  }
+  
+  #agentic-ai [style*="minHeight: 300px"] {
+    min-height: auto !important;
+    padding: 24px !important;
+  }
+}
+
+/* Testimonials Mobile */
+@media (max-width: 991px) {
+  #testimonials {
+    padding: 60px 24px !important;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #testimonials {
+    padding: 48px 16px !important;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .testimonial-card {
+    min-height: auto !important;
+  }
+}
+
+/* Contact Page Mobile */
+@media (max-width: 991px) {
+  #contact {
+    padding: 60px 24px !important;
+  }
+  
+  .contact-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  
+  /* Hide contact image on smaller screens */
+  .contact-form-grid > div:first-child {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #contact {
+    padding: 48px 16px !important;
+  }
+  
+  .contact-form {
+    padding: 24px !important;
+  }
+  
+  /* Contact hero on mobile */
+  section[style*="minHeight: 500px"] {
+    min-height: 350px !important;
+  }
+  
+  section[style*="minHeight: 500px"] h1 {
+    font-size: clamp(32px, 8vw, 48px) !important;
+  }
+  
+  section[style*="minHeight: 500px"] p {
+    font-size: clamp(14px, 3vw, 18px) !important;
+  }
+}
+
+/* Campus Connect Page Mobile */
+@media (max-width: 991px) {
+  #campus-connect {
+    padding-top: 80px !important;
+    padding-bottom: 60px !important;
+  }
+  
+  /* Why Partner grid */
+  #campus-connect [style*="gridTemplateColumns: repeat(auto-fit, minmax(500px"] {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  
+  /* Services grid */
+  #campus-connect [style*="gridTemplateColumns: repeat(auto-fit, minmax(380px"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+  
+  /* Course catalog grid */
+  #campus-connect [style*="gridTemplateColumns: repeat(auto-fit, minmax(340px"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+  
+  /* Stats grid */
+  #campus-connect [style*="gridTemplateColumns: repeat(auto-fit, minmax(200px"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+  
+  /* Feature cards grid */
+  #campus-connect [style*="gridTemplateColumns: repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  
+  /* Institution services grid */
+  #campus-connect [style*="gridTemplateColumns: repeat(auto-fit, minmax(300px"] {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #campus-connect {
+    padding-top: 70px !important;
+    padding-bottom: 48px !important;
+  }
+  
+  #campus-connect h1 {
+    font-size: clamp(28px, 7vw, 42px) !important;
+  }
+  
+  #campus-connect h2 {
+    font-size: clamp(24px, 6vw, 36px) !important;
+  }
+  
+  #campus-connect h3 {
+    font-size: clamp(20px, 5vw, 26px) !important;
+  }
+  
+  /* All grids single column */
+  #campus-connect [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  
+  /* Padding adjustments */
+  #campus-connect [style*="padding:"][style*="48px"],
+  #campus-connect [style*="padding:"][style*="64px"] {
+    padding: 24px !important;
+  }
+  
+  /* Icon containers */
+  #campus-connect [style*="width: 88px"][style*="height: 88px"] {
+    width: 64px !important;
+    height: 64px !important;
+    font-size: 32px !important;
+  }
+  
+  #campus-connect [style*="width: 80px"][style*="height: 80px"] {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 28px !important;
+  }
+  
+  /* Cards minimum height */
+  #campus-connect [style*="minHeight: 450px"],
+  #campus-connect [style*="minHeight: 160px"] {
+    min-height: auto !important;
+  }
+  
+  /* Tech logos scroll container */
+  #campus-connect [style*="overflow: hidden"][style*="borderRadius"] {
+    padding: 16px 0 !important;
+  }
+  
+  #campus-connect [style*="minWidth: 120px"] {
+    min-width: 100px !important;
+    padding: 12px !important;
+  }
+  
+  #campus-connect [style*="width: 48px"][style*="height: 48px"] {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+
+/* Footer Mobile */
+@media (max-width: 991px) {
+  .footer {
+    padding: 48px 24px 0 !important;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 32px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 40px 16px 0 !important;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 16px !important;
+    text-align: center !important;
+    padding: 20px 0 !important;
+  }
+  
+  .footer-bottom [style*="display: flex"][style*="gap: 16px"] {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  
+  .footer [style*="marginBottom: 48px"] {
+    margin-bottom: 32px !important;
+    padding-bottom: 24px !important;
+  }
+  
+  .footer [style*="fontSize: 20px"] {
+    font-size: 16px !important;
+  }
+  
+  .footer img[style*="height: 50px"] {
+    height: 40px !important;
+  }
+}
+
+/* CTA Banner Mobile */
+@media (max-width: 767px) {
+  section[style*="background: #F5F5F5"],
+  section[style*="background: linear-gradient"] {
+    padding: 48px 16px !important;
+  }
+  
+  section[style*="background: #F5F5F5"] h2,
+  section[style*="background: #F5F5F5"] h3 {
+    font-size: clamp(24px, 6vw, 32px) !important;
+  }
+}
+
+/* Services Page Mobile */
+@media (max-width: 991px) {
+  section[style*="paddingTop: clamp(100px"] {
+    padding: 80px 24px 48px !important;
+  }
+  
+  section[style*="paddingTop: clamp(100px"] [style*="gridTemplateColumns: repeat(auto-fit"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  section[style*="paddingTop: clamp(100px"] {
+    padding: 70px 16px 40px !important;
+  }
+  
+  section[style*="paddingTop: clamp(100px"] [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  .service-card-white {
+    padding: 20px !important;
+    min-height: auto !important;
+  }
+}
+
+/* Global Touch-Friendly Improvements */
+@media (max-width: 767px) {
+  /* Increase tap targets */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better spacing for touch */
+  .btn {
+    padding: 14px 24px !important;
+    font-size: 15px !important;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block !important;
+    text-align: center;
+  }
+  
+  /* Form inputs mobile-friendly */
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px !important; /* Prevents iOS zoom */
+    padding: 14px 16px !important;
+  }
+  
+  /* Cards better spacing */
+  .card {
+    padding: 20px !important;
+  }
+  
+  /* Section spacing */
+  .section {
+    padding: 48px 16px !important;
+  }
+  
+  /* Typography scaling */
+  h1 {
+    font-size: clamp(28px, 7vw, 36px) !important;
+  }
+  
+  h2 {
+    font-size: clamp(24px, 6vw, 32px) !important;
+  }
+  
+  h3 {
+    font-size: clamp(20px, 5vw, 26px) !important;
+  }
+  
+  /* Better line height for mobile */
+  p {
+    line-height: 1.7 !important;
+  }
+}
+
+/* Small mobile (375px and below) */
+@media (max-width: 375px) {
+  :root {
+    --container-padding-mobile: 12px;
+  }
+  
+  .navbar-content {
+    padding: 0 12px !important;
+  }
+  
+  .navbar-logo-text {
+    font-size: 14px !important;
+  }
+  
+  .section {
+    padding: 40px 12px !important;
+  }
+  
+  h1 {
+    font-size: clamp(24px, 8vw, 32px) !important;
+  }
+  
+  h2 {
+    font-size: clamp(22px, 7vw, 28px) !important;
+  }
+}
+
+/* Landscape Mobile Improvements */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto !important;
+    padding: 80px 24px 40px !important;
+  }
+  
+  .hero-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .navbar-nav {
+    height: auto !important;
+    max-height: 80vh !important;
+  }
+}
+
+/* Safe area insets for notched devices */
+@supports (padding: max(0px)) {
+  .navbar {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+  
+  .footer {
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+  }
+  
+  .hero-section [style*="position: fixed"] {
+    bottom: max(16px, env(safe-area-inset-bottom)) !important;
+    right: max(16px, env(safe-area-inset-right)) !important;
+  }
+}
+
+/* Mobile menu overlay */
+@media (max-width: 991px) {
+  .navbar-overlay {
+    display: block !important;
+  }
+}
+
+/* Hero buttons responsive */
+@media (max-width: 575px) {
+  .hero-buttons {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+  }
+  
+  .hero-buttons a,
+  .hero-buttons button {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* Campus Connect page responsive adjustments */
+@media (max-width: 767px) {
+  .why-partner-grid {
+    gap: 32px !important;
+  }
+  
+  .feature-cards-grid > div {
+    min-height: 120px !important;
+  }
+  
+  .services-offerings-grid > div,
+  .course-catalog-grid > div,
+  .aceai-labs-grid > div {
+    min-height: auto !important;
+    padding: 24px !important;
+  }
+  
+  .campus-features-grid > div {
+    padding: 24px !important;
+  }
+  
+  .campus-stats > div {
+    min-width: auto !important;
+    padding: 16px 20px !important;
+  }
+}
+
+/* Training section responsive adjustments */
+@media (max-width: 767px) {
+  .training-services-grid > div {
+    padding: 24px !important;
+  }
+  
+  .process-flow-grid > div {
+    padding: 24px 16px !important;
+  }
+  
+  .approach-details-grid > div {
+    padding: 24px !important;
+  }
+}
+
+/* Image responsive handling */
+@media (max-width: 767px) {
+  .image-slider {
+    min-height: 220px !important;
+  }
+  
+  .image-slider img {
+    min-height: 220px !important;
+  }
+}
+
+/* Smooth scroll behavior */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    border: 2px solid currentColor;
+  }
+  
+  .card,
+  .service-card {
+    border-width: 2px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .navbar-toggle,
+  .chatbot-toggle,
+  .scroll-top-btn,
+  .hero-section [style*="position: fixed"] {
+    display: none !important;
+  }
+  
+  .hero-section {
+    min-height: auto !important;
+    padding: 20px !important;
+  }
+  
+  .section {
+    padding: 20px !important;
+    page-break-inside: avoid;
+  }
+}
+
 /* Responsive Utilities */
 @media (max-width: 767px) {
   /* Ensure all containers are full width */

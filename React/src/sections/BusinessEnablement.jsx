@@ -56,7 +56,7 @@ function BusinessEnablement() {
           position: "relative",
           overflow: "hidden",
           background: "#ffffff",
-          padding: "clamp(72px, 9vw, 120px) clamp(24px, 5vw, 64px)",
+          padding: "clamp(48px, 9vw, 120px) clamp(16px, 5vw, 64px)",
         }}
     >
       <div
@@ -96,10 +96,11 @@ function BusinessEnablement() {
         }}
       >
         <div
+          className="business-enablement-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gap: "clamp(32px, 5vw, 64px)",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 400px), 1fr))",
+            gap: "clamp(24px, 5vw, 64px)",
             alignItems: "center",
             position: "relative",
             zIndex: 2,
@@ -116,13 +117,14 @@ function BusinessEnablement() {
           >
             {/* Image Slider */}
             <div
+              className="image-slider"
               style={{
                 position: "relative",
                 width: "100%",
                 borderRadius: "16px",
                 overflow: "hidden",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.1)",
-                minHeight: "400px",
+                minHeight: "clamp(250px, 40vw, 400px)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -139,7 +141,7 @@ function BusinessEnablement() {
                     left: 0,
                     width: "100%",
                     height: "auto",
-                    minHeight: "400px",
+                    minHeight: "clamp(250px, 40vw, 400px)",
                     objectFit: "contain",
                     objectPosition: "center",
                     opacity: currentImageIndex === index ? 1 : 0,
