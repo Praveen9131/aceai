@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Chatbot from "./components/Chatbot";
 import Home from "./pages/Home";
@@ -28,6 +28,8 @@ function App() {
           <Route path="/syllabus/:courseSlug" element={<Syllabus />} />
           <Route path="/hero-test" element={<HeroTest />} />
           <Route path="/phone-demo" element={<PhoneOnly />} />
+          {/* Catch-all route - redirect to home for unknown routes */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </BrowserRouter>
