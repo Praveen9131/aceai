@@ -78,7 +78,7 @@ const CareerGrowth = () => {
 
         <div className="mt-20 text-center">
           <Link
-            to="/get-in-touch"
+            to="/contact"
             className="px-8 py-2 bg-indigo-500 hover:bg-indigo-600 text-white font-medium rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             Grow Your Career →

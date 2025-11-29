@@ -1,6 +1,5 @@
 // src/Components/ContactUs.jsx
 import React from "react";
-import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
@@ -95,13 +94,13 @@ const ContactUs = () => {
 
             <p className="text-xs text-gray-500 text-center mt-4">
               By contacting us, you agree to our{" "}
-              <Link to="/terms" className="font-semibold text-blue-600">
+              <span className="font-semibold text-blue-600">
                 Terms of Service
-              </Link>{" "}
+              </span>{" "}
               and{" "}
-              <Link to="/privacy" className="font-semibold text-blue-600">
+              <span className="font-semibold text-blue-600">
                 Privacy Policy
-              </Link>
+              </span>
               .
             </p>
           </form>
