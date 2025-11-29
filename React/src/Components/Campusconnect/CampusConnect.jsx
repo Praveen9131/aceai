@@ -28,7 +28,7 @@ function CampusConnect() {
             </div>
             <div className="mt-10 flex justify-center md:justify-center gap-10">
               <Link
-                to="/get-in-touch"
+                to="/contact"
                 className="px-8 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
               >
                 Get Started
