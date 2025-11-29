@@ -9,13 +9,6 @@ function BusinessEnablement() {
   const [ref, isVisible] = useScrollAnimation();
   const [mounted, setMounted] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const colors = {
-    primary: "var(--color-primary)",
-    secondary: "var(--color-primary-light)",
-    accent: "var(--color-primary-dark)",
-    deep: "var(--color-blue)",
-    text: "var(--color-gray-900)",
-  };
 
   const images = [
     { 

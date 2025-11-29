@@ -16,8 +16,8 @@ function Contact() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   
-  // API Configuration
-  const API_URL = process.env.REACT_APP_API_URL || "https://api.aceai.in/api/contact";
+  // API Configuration - using Vite's import.meta.env for environment variables
+  const API_URL = import.meta.env.VITE_API_URL || "https://api.aceai.in/api/contact";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
