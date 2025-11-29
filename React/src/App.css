@@ -1593,6 +1593,11 @@ section {
     display: none !important;
   }
   
+  /* Hide phone container with video animation on mobile - desktop only */
+  .hero-phone-container {
+    display: none !important;
+  }
+  
   .navbar-nav {
     position: fixed;
     top: 64px;
@@ -2147,7 +2152,8 @@ section {
   
   /* Hide animations on mobile/tablet - desktop only */
   .lottie-background,
-  .waves-background {
+  .waves-background,
+  .hero-phone-container {
     display: none !important;
   }
   
