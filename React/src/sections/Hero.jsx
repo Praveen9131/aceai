@@ -45,7 +45,7 @@ function Hero() {
 
 
   return (
-    <section id="hero" className="hero-section" style={{ position: "relative", overflow: "hidden", minHeight: "100vh", display: "flex", alignItems: "center", background: "#ffffff", paddingLeft: "clamp(32px, 4vw, 64px)", paddingRight: "clamp(14px, 1.8vw, 20px)" }}>
+    <section id="hero" className="hero-section" style={{ position: "relative", overflow: "hidden", minHeight: "100vh", display: "flex", alignItems: "center", background: "#ffffff", paddingLeft: "clamp(16px, 4vw, 64px)", paddingRight: "clamp(16px, 4vw, 64px)", paddingTop: "clamp(80px, 12vw, 120px)", paddingBottom: "clamp(40px, 6vw, 60px)" }}>
       
       {/* Lottie Animation Background */}
       <div 
@@ -463,8 +463,8 @@ function Hero() {
         </svg>
       </div>
 
-      <div className="hero-content" style={{ position: "relative", zIndex: 10, maxWidth: "100%", margin: "0", padding: "clamp(8px, 1vw, 16px)", paddingLeft: "0", width: "100%" }}>
-        <div className="hero-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "clamp(24px, 5vw, 48px)", alignItems: "center" }}>
+      <div className="hero-content" style={{ position: "relative", zIndex: 10, maxWidth: "1400px", margin: "0 auto", padding: "0", width: "100%" }}>
+        <div className="hero-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(24px, 5vw, 48px)", alignItems: "center" }}>
           {/* Left Section - Text Content */}
           <div style={{ display: "flex", flexDirection: "column", gap: "32px", textAlign: "left" }}>
             {/* Trust Badge */}
@@ -568,23 +568,27 @@ function Hero() {
               </div>
             </div>
 
-            <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
+            <div className="hero-buttons" style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
               <a
                 href="/services"
+                className="hero-btn-secondary"
                 style={{
-                  padding: "clamp(14px, 1.8vw, 16px) clamp(28px, 3.5vw, 36px)",
+                  padding: "clamp(12px, 1.8vw, 16px) clamp(20px, 3vw, 36px)",
                   borderRadius: "12px",
                   border: "2px solid var(--color-primary)",
                   background: "transparent",
                   color: "var(--color-primary)",
-                  fontSize: "var(--font-size-button)",
+                  fontSize: "clamp(13px, 1.4vw, 15px)",
                   fontWeight: 600,
                   textDecoration: "none",
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: "10px",
+                  justifyContent: "center",
+                  gap: "8px",
                   transition: "all 0.3s ease",
                   letterSpacing: "0.01em",
+                  flex: "1 1 auto",
+                  minWidth: "160px",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = "var(--color-primary-dark)";
@@ -599,24 +603,28 @@ function Hero() {
                   e.currentTarget.style.boxShadow = "none";
                 }}
               >
-                Explore Our Services <span style={{ fontSize: "20px" }}>&rarr;</span>
+                Explore Services <span style={{ fontSize: "18px" }}>&rarr;</span>
               </a>
               <a
                 href="/campus-connect"
+                className="hero-btn-primary"
                 style={{
-                  padding: "clamp(14px, 1.8vw, 16px) clamp(28px, 3.5vw, 36px)",
+                  padding: "clamp(12px, 1.8vw, 16px) clamp(20px, 3vw, 36px)",
                   borderRadius: "12px",
                   background: "var(--color-primary)",
                   color: "var(--color-white)",
-                  fontSize: "var(--font-size-button)",
+                  fontSize: "clamp(13px, 1.4vw, 15px)",
                   fontWeight: 600,
                   textDecoration: "none",
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: "10px",
+                  justifyContent: "center",
+                  gap: "8px",
                   transition: "all 0.3s ease",
                   letterSpacing: "0.01em",
                   boxShadow: "0 4px 12px rgba(255, 108, 12, 0.25)",
+                  flex: "1 1 auto",
+                  minWidth: "160px",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = "var(--color-primary-dark)";
@@ -635,10 +643,10 @@ function Hero() {
           </div>
 
           {/* Right Section - Phone Design with Embedded Video */}
-          <div style={{ 
+          <div className="hero-phone-container" style={{ 
             position: "relative", 
             width: "100%", 
-            minHeight: "clamp(320px, 38vw, 520px)", 
+            minHeight: "clamp(280px, 35vw, 520px)", 
             display: "flex", 
             alignItems: "center", 
             justifyContent: "center" 

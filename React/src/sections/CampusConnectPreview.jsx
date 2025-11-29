@@ -113,15 +113,15 @@ color: "#4B5563",
 
           {/* Stats Preview */}
           <div 
-            className={isVisible ? "fade-in-up" : ""}
+            className={`campus-stats ${isVisible ? "fade-in-up" : ""}`}
             style={{ 
               display: "flex", 
               justifyContent: "center", 
-              gap: "60px", 
-              marginBottom: "60px", 
+              gap: "clamp(24px, 5vw, 60px)", 
+              marginBottom: "clamp(40px, 6vw, 60px)", 
               flexWrap: "wrap",
               maxWidth: "1000px",
-              margin: "48px auto 60px",
+              margin: "clamp(32px, 5vw, 48px) auto clamp(40px, 6vw, 60px)",
             }}
           >
             {[
@@ -176,13 +176,14 @@ color: "#4B5563",
 
         {/* Features Grid Preview */}
         <div 
+          className="campus-features-grid"
           style={{ 
             display: "grid", 
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", 
-            gap: "clamp(24px, 4vw, 32px)",
-            marginBottom: "64px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", 
+            gap: "clamp(20px, 4vw, 32px)",
+            marginBottom: "clamp(40px, 6vw, 64px)",
             maxWidth: "1200px",
-            margin: "0 auto 64px"
+            margin: "0 auto clamp(40px, 6vw, 64px)"
           }}
         >
           {[
