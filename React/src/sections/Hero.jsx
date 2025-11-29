@@ -501,16 +501,25 @@ function Hero() {
                   fontFamily: "var(--font-family-heading)",
                   minHeight: "clamp(120px, 16vw, 180px)",
                   display: "flex",
-                  flexWrap: "wrap",
-                  alignItems: "center",
+                  flexDirection: "column",
+                  gap: "8px",
                   letterSpacing: "-0.02em",
                 }}
               >
+                <span style={{ 
+                  color: "var(--color-primary)",
+                  fontSize: "clamp(32px, 5vw, 56px)",
+                  fontWeight: 800,
+                }}>
+                  AceAI Technology
+                </span>
                 <span
                   style={{
                     opacity: isVisible ? 1 : 0,
                     transition: "opacity 0.5s ease-in-out",
                     display: "inline-block",
+                    fontSize: "clamp(24px, 3.5vw, 42px)",
+                    fontWeight: 600,
                   }}
                 >
                   {themes[currentTheme].text}{" "}

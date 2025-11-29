@@ -8,11 +8,11 @@ function About() {
   const [ref, isVisible] = useScrollAnimation();
 
   useEffect(() => {
-    document.title = "About Us - Ace AI";
+    document.title = "About Us - AceAI Technology";
     document.body.style.background = "#ffffff";
     return () => {
       document.body.style.background = "";
-      document.title = "Ace AI - EdTech & Software Solutions";
+      document.title = "AceAI Technology - AI Solutions, Training & Development";
     };
   }, []);
 
@@ -132,7 +132,7 @@ function About() {
                 marginBottom: spacing.lg,
               }}
             >
-              About Ace AI
+              About AceAI Technology
             </span>
             
             <h1
@@ -154,7 +154,7 @@ function About() {
                 backgroundClip: "text",
                 display: "inline-block",
               }}>
-                Ace AI
+                AceAI Technology
               </span>
             </h1>
             

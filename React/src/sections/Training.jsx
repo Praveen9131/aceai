@@ -14,7 +14,7 @@ function Training() {
     {
       icon: <FaGraduationCap />,
       title: "Campus Connect",
-      description: "Transform your institution with cutting-edge AI and technical training programs. Partner with Aceai to empower your students and faculty with industry expertise and prepare your campus for the future.",
+      description: "Transform your institution with cutting-edge AI and technical training programs. Partner with AceAI Technology to empower your students and faculty with industry expertise and prepare your campus for the future.",
       image: campusConnectImage,
       features: [
         "Institutional partnership programs",

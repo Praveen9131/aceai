@@ -135,7 +135,7 @@ function CampusConnect() {
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
             }}>
-              Aceai Campus Connect
+              AceAI Campus Connect
             </span>
           </h1>
           <p 
@@ -149,7 +149,7 @@ function CampusConnect() {
               fontWeight: 400
             }}
           >
-            Empower your students and faculty with cutting-edge AI, technical training, and industry expertise. Partner with Aceai to prepare your campus for the future.
+            Empower your students and faculty with cutting-edge AI, technical training, and industry expertise. Partner with AceAI Technology to prepare your campus for the future.
           </p>
           
           {/* Stats Section */}
@@ -234,7 +234,7 @@ function CampusConnect() {
                 letterSpacing: "-0.01em"
               }}
             >
-              Why Partner with Aceai?
+              Why Partner with AceAI Technology?
             </h2>
             <p 
               className={isVisible ? "fade-in-up" : ""}
@@ -760,7 +760,7 @@ function CampusConnect() {
                 lineHeight: "1.7"
               }}
             >
-              Everything you need to know about partnering with Aceai Campus Connect
+              Everything you need to know about partnering with AceAI Campus Connect
             </p>
           </div>
           <div style={{ 
@@ -902,7 +902,7 @@ function CampusConnect() {
                 opacity: 0.95,
               }}
             >
-              Join 200+ institutions already partnered with Aceai. Let's discuss how we can elevate your students' success and boost placement rates.
+              Join 200+ institutions already partnered with AceAI Technology. Let's discuss how we can elevate your students' success and boost placement rates.
             </p>
             <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
               <a

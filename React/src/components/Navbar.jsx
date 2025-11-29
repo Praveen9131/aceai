@@ -37,8 +37,8 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-content">
         <Link to="/" className="navbar-logo" style={{ display: "flex", alignItems: "center", gap: "8px", marginLeft: "0" }}>
-          <img src={logoImg} alt="Aceai Technologies" />
-          <span className="navbar-logo-text">ACEAI Technologies</span>
+          <img src={logoImg} alt="AceAI Technology" />
+          <span className="navbar-logo-text">AceAI Technology</span>
         </Link>
 
         <button

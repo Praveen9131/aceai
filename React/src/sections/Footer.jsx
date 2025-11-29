@@ -12,13 +12,18 @@ function Footer() {
           borderBottom: "1px solid rgba(255, 255, 255, 0.1)"
         }}>
           {/* Logo */}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-            <img 
-              src="/homeImgs/newlogoi.jpg" 
-              alt="Aceai Technologies" 
-              style={{ height: "clamp(40px, 6vw, 50px)", width: "auto" }}
-            />
-            <span style={{ fontSize: "clamp(16px, 2.5vw, 20px)", fontWeight: 600, color: "#ffffff" }}>Aceai Technologies</span>
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+              <img 
+                src="/homeImgs/newlogoi.jpg" 
+                alt="AceAI Technology" 
+                style={{ height: "clamp(40px, 6vw, 50px)", width: "auto" }}
+              />
+              <span style={{ fontSize: "clamp(16px, 2.5vw, 20px)", fontWeight: 600, color: "#ffffff" }}>AceAI Technology</span>
+            </div>
+            <p style={{ fontSize: "14px", color: "rgba(255, 255, 255, 0.7)", margin: 0, maxWidth: "400px" }}>
+              Empowering businesses and individuals with cutting-edge AI solutions, professional training, and innovative software development.
+            </p>
           </div>
         </div>
 
@@ -244,7 +249,7 @@ function Footer() {
           gap: "16px"
         }}>
           <p style={{ fontSize: "14px", color: "#ffffff", margin: 0 }}>
-            © 2025 Aceai Technologies. All rights reserved.
+            © 2025 AceAI Technology. All rights reserved.
           </p>
           <div style={{ display: "flex", gap: "16px", fontSize: "14px" }}>
             <a href="#" style={{ color: "#ffffff", textDecoration: "none", transition: "color 0.3s ease" }}

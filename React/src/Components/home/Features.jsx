@@ -89,7 +89,7 @@ const Features = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Why Choose Aceai
+            Why Choose AceAI Technology
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Experience the difference with our comprehensive approach

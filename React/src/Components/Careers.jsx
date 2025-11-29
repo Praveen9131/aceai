@@ -53,10 +53,10 @@ const Careers = () => {
     <>
       <section className="bg-black text-white py-16 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">About Ace AI</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">About AceAI Technology</h2>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            At Ace AI, we're building the future of AI-powered collaboration.
+            At AceAI Technology, we're building the future of AI-powered collaboration.
             Our mission is to bridge the gap between human creativity and
             artificial intelligence, creating tools that enhance productivity
             and innovation.

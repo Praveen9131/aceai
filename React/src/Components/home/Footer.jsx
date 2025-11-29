@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <img src={footerlogo} alt="Aceai Logo" className="h-12 w-auto mb-4" />
+            <img src={footerlogo} alt="AceAI Technology Logo" className="h-12 w-auto mb-4" />
             <p className="text-gray-400 leading-relaxed text-sm">
               Leading AI services, website development, and UX/UI design company
               transforming businesses with cutting-edge technology.
@@ -145,7 +145,7 @@ const Footer = () => {
               <p>Chennai, Tamilnadu, 603103</p>
             </div>
             <p className="text-gray-400 text-sm text-center md:text-right">
-              © 2025 Aceai Technologies. All rights reserved.
+              © 2025 AceAI Technology. All rights reserved.
             </p>
           </div>
         </div>

@@ -35,11 +35,11 @@ function CampusConnect() {
   const [ref, isVisible] = useScrollAnimation();
   
   useEffect(() => {
-    document.title = "Campus Connect - Ace AI";
+    document.title = "Campus Connect - AceAI Technology";
     document.body.style.background = "#ffffff";
     return () => {
       document.body.style.background = "";
-      document.title = "Ace AI - EdTech & Software Solutions";
+      document.title = "AceAI Technology - AI Solutions, Training & Development";
     };
   }, []);
 
@@ -259,7 +259,7 @@ function CampusConnect() {
                 backgroundClip: "text",
                 display: "inline-block",
               }}>
-                Aceai Campus Connect
+                AceAI Campus Connect
               </span>
             </h1>
             
@@ -274,7 +274,7 @@ function CampusConnect() {
                 fontWeight: 400,
               }}
             >
-              Empower your students and faculty with cutting-edge AI, technical training, and industry expertise. Partner with Aceai to prepare your campus for the future.
+              Empower your students and faculty with cutting-edge AI, technical training, and industry expertise. Partner with AceAI Technology to prepare your campus for the future.
             </p>
             
             {/* Hero Image */}
@@ -382,7 +382,7 @@ function CampusConnect() {
                   fontWeight: 700,
                 }}
               >
-                Why Partner with Aceai?
+                Why Partner with AceAI Technology?
               </h2>
               <p
                 className={isVisible ? "fade-in-up" : ""}
@@ -1553,7 +1553,7 @@ function CampusConnect() {
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                 }}>
-                  Aceai Labs
+                  AceAI Labs
                 </span>
               </h2>
               <p 
@@ -1727,7 +1727,7 @@ function CampusConnect() {
                       color: colors.primary,
                     }}
                   >
-                    Join Aceai Labs
+                    Join AceAI Labs
                   </div>
                 </div>
               ))}
@@ -1761,7 +1761,7 @@ function CampusConnect() {
                   margin: `0 auto ${spacing.lg}`,
                 }}
               >
-                Partner with Aceai Labs to bring innovative workshops, exciting hackathons, and comprehensive programs to your institution.
+                Partner with AceAI Labs to bring innovative workshops, exciting hackathons, and comprehensive programs to your institution.
               </p>
               <a
                 href="/contact"
@@ -1791,7 +1791,7 @@ function CampusConnect() {
                   e.currentTarget.style.background = colors.primary;
                 }}
               >
-                Get Started with Aceai Labs <FaArrowRight size={16} />
+                Get Started with AceAI Labs <FaArrowRight size={16} />
               </a>
             </div>
           </div>

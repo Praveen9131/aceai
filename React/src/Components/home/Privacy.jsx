@@ -8,7 +8,7 @@ const Privacy = () => {
       </h1>
 
       <p className="text-gray-700 mb-6">
-        At <strong>Ace AI</strong>, we value your privacy and are committed to
+        At <strong>AceAI Technology</strong>, we value your privacy and are committed to
         protecting your personal data. This Privacy Policy outlines how we
         collect, use, and safeguard your information when you visit our website
         or use our services.

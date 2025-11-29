@@ -9,7 +9,7 @@ const Terms = () => {
       </h1>
 
       <p className="text-gray-700 mb-6">
-        Welcome to <strong>Ace AI</strong>. These terms and conditions outline
+        Welcome to <strong>AceAI Technology</strong>. These terms and conditions outline
         the rules and regulations for the use of our website and services. By
         accessing or using our services, you agree to comply with and be bound
         by these terms.
@@ -31,7 +31,7 @@ const Terms = () => {
           </h2>
           <p>
             All content, branding, logos, and intellectual property on this
-            website are the property of Ace AI or its licensors. Unauthorized
+            website are the property of AceAI Technology or its licensors. Unauthorized
             use is strictly prohibited.
           </p>
         </div>
@@ -51,7 +51,7 @@ const Terms = () => {
             4. Limitation of Liability
           </h2>
           <p>
-            Ace AI will not be held liable for any direct, indirect, incidental,
+            AceAI Technology will not be held liable for any direct, indirect, incidental,
             or consequential damages arising from your use of our website or
             services.
           </p>
@@ -69,7 +69,7 @@ const Terms = () => {
         <div>
           <h2 className="text-xl font-semibold mb-2">6. Changes to Terms</h2>
           <p>
-            Ace AI may update these Terms and Conditions at any time. Your
+            AceAI Technology may update these Terms and Conditions at any time. Your
             continued use of the website after any changes indicates your
             acceptance of the new terms.
           </p>

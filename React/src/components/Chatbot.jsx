@@ -96,7 +96,7 @@ function Chatbot() {
   
   // Initialize messages with welcome message
   const getInitialMessages = () => [{
-    text: "Hello! 👋 I'm Aceai Assistant, here to help you. Ask me anything about our services, training programs, or contact information!",
+    text: "Hello! 👋 I'm AceAI Assistant, here to help you. Ask me anything about our services, training programs, or contact information!",
     sender: "bot",
     timestamp: new Date()
   }];
@@ -415,7 +415,7 @@ function Chatbot() {
     // Check for greetings and respond appropriately
     if (question.match(/\b(hi|hello|hey|greetings|good\s+(morning|afternoon|evening)|howdy)\b/i)) {
       return { 
-        answer: "Hello! 👋 I'm Aceai Assistant. How can I help you today? You can ask me about our services, training programs, pricing, or anything else!",
+        answer: "Hello! 👋 I'm AceAI Assistant. How can I help you today? You can ask me about our services, training programs, pricing, or anything else!",
         showRedirect: false 
       };
     }
@@ -754,7 +754,7 @@ function Chatbot() {
             }}
           >
             <div>
-              <h3 style={{ margin: 0, fontSize: "18px", fontWeight: 600 }}>Aceai Assistant</h3>
+              <h3 style={{ margin: 0, fontSize: "18px", fontWeight: 600 }}>AceAI Assistant</h3>
               <p style={{ margin: "4px 0 0 0", fontSize: "12px", opacity: 0.9 }}>We're here to help!</p>
             </div>
             <button

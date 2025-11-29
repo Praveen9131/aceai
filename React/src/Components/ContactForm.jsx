@@ -9,7 +9,7 @@ const ContactUs = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Us</h2>
           <p className="text-gray-700 mb-4">
-            Email, call, or complete the form to learn how Ace AI can solve your
+            Email, call, or complete the form to learn how AceAI Technology can solve your
             AI needs.
           </p>
 
@@ -23,7 +23,7 @@ const ContactUs = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-1">Feedback & Suggestions</h4>
-              <p>Your feedback helps us shape the future of Ace AI.</p>
+              <p>Your feedback helps us shape the future of AceAI Technology.</p>
             </div>
             <div>
               <h4 className="font-semibold mb-1">Media Inquiries</h4>

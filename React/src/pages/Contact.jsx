@@ -24,7 +24,7 @@ function Contact() {
   const API_URL = process.env.REACT_APP_API_URL || "https://api.aceai.in/api/contact"; // Replace with your actual API URL
 
   useEffect(() => {
-    document.title = "Contact Us - Ace AI";
+    document.title = "Contact Us - AceAI Technology";
   }, []);
 
   const handleChange = (e) => {
