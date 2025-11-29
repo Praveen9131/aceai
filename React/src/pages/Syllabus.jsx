@@ -14,7 +14,7 @@ function Syllabus() {
   const [selectedCourse, setSelectedCourse] = useState(null);
 
   useEffect(() => {
-    document.title = "Course Syllabus - Ace AI";
+    document.title = "Course Syllabus - AceAI Technology";
     document.body.style.background = "#ffffff";
     
     // Find course by slug
@@ -30,7 +30,7 @@ function Syllabus() {
 
     return () => {
       document.body.style.background = "";
-      document.title = "Ace AI - EdTech & Software Solutions";
+      document.title = "AceAI Technology - AI Solutions, Training & Development";
     };
   }, [courseSlug]);
 

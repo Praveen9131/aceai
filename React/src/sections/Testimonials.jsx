@@ -12,7 +12,7 @@ const testimonials = [
     name: "Rajesh Kumar",
     title: "CEO, TechStart Inc.",
     avatar: "https://i.pravatar.cc/150?img=1",
-    quote: "Aceai transformed our business with their AI solutions. The team is professional, innovative, and delivers exceptional results. Our productivity increased by 300%.",
+    quote: "AceAI Technology transformed our business with their AI solutions. The team is professional, innovative, and delivers exceptional results. Our productivity increased by 300%.",
     rating: 5,
     service: "AI Solutions",
   },

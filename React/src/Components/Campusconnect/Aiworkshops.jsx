@@ -33,7 +33,7 @@ function Aiworkshops() {
       </h2>
       <div className="flex items-center justify-center mb-4">
         <p className="text-black/70 text-md md:text-lg text-center md:w-1/2 ">
-          Ace AI promotes learning and innovation through guest lectures,
+          AceAI Technology promotes learning and innovation through guest lectures,
           seminars, hackathons, and exhibitions connecting academia and industry
           to empower students and professionals in the evolving field of
           artificial intelligence.

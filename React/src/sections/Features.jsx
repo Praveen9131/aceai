@@ -12,7 +12,7 @@ function Features() {
   return (
     <section id="features" className="section features-section">
       <div className="container">
-        <h2 className="section-title">Why Choose Aceai</h2>
+        <h2 className="section-title">Why Choose AceAI Technology</h2>
         <p className="section-subtitle">
           Experience the difference with our comprehensive approach
         </p>

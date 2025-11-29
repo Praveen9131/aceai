@@ -45,7 +45,7 @@ function About() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Why Choose Ace AI
+            Why Choose AceAI Technology
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We combine cutting-edge technology with comprehensive education

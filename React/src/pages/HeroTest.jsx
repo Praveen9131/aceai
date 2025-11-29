@@ -6,9 +6,9 @@ import { useEffect } from "react";
 
 export default function HeroTest() {
   useEffect(() => {
-    document.title = "Hero Test - Ace AI";
+    document.title = "Hero Test - AceAI Technology";
     return () => {
-      document.title = "Ace AI - EdTech & Software Solutions";
+      document.title = "AceAI Technology - AI Solutions, Training & Development";
     };
   }, []);
 

@@ -58,8 +58,13 @@ function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center z-40">
-            <img src={logoImg} alt="Aceai Logo" className="h-10 w-10" />
+          <Link to="/" className="flex items-center gap-2 z-40">
+            <img src={logoImg} alt="AceAI Technology Logo" className="h-10 w-10" />
+            <span className={`font-bold text-lg transition-colors ${
+              scrolled ? "text-gray-800" : "text-white"
+            }`}>
+              AceAI Technology
+            </span>
           </Link>
 
           {/* Mobile Menu Button */}

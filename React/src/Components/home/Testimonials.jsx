@@ -7,7 +7,7 @@ const testimonials = [
     title: "CEO, TechStart Inc.",
     image: "https://i.pravatar.cc/150?img=1",
     quote:
-      "Aceai transformed our business with their AI solutions. The team is professional, innovative, and delivers exceptional results.",
+      "AceAI Technology transformed our business with their AI solutions. The team is professional, innovative, and delivers exceptional results.",
     rating: 5,
   },
   {

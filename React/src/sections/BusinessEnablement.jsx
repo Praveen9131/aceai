@@ -21,7 +21,7 @@ function BusinessEnablement() {
     { 
       src: campusImage, 
       alt: "University Campus",
-      heading: "Connect with Aceai Campus"
+      heading: "Connect with AceAI Campus"
     },
     { 
       src: chatGPTImage, 

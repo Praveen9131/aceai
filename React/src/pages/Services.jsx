@@ -24,7 +24,7 @@ const services = [
     icon: <FaGraduationCap />,
     title: "Campus Connect",
     description:
-      "Transform your institution with cutting-edge AI and technical training programs. Partner with Aceai to empower your students and faculty with industry expertise and prepare your campus for the future.",
+      "Transform your institution with cutting-edge AI and technical training programs. Partner with AceAI Technology to empower your students and faculty with industry expertise and prepare your campus for the future.",
     features: [
       "Institutional partnership programs",
       "Custom training curriculum development",
@@ -122,11 +122,11 @@ function Services() {
   const [ref, isVisible] = useScrollAnimation();
 
   useEffect(() => {
-    document.title = "Services - Ace AI";
+    document.title = "Services - AceAI Technology";
     document.body.style.background = "#ffffff";
     return () => {
       document.body.style.background = "";
-      document.title = "Ace AI - EdTech & Software Solutions";
+      document.title = "AceAI Technology - AI Solutions, Training & Development";
     };
   }, []);
 
