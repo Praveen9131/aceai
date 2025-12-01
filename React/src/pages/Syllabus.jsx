@@ -10,7 +10,7 @@ import { curriculumData } from "../data/curriculumData";
 
 function Syllabus() {
   const { courseSlug } = useParams();
-  const [ref, isVisible] = useScrollAnimation();
+  const [ref] = useScrollAnimation();
   const [selectedCourse, setSelectedCourse] = useState(null);
 
   useEffect(() => {
